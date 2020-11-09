@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="5349d7ab-5e37-410d-9448-88d0d4d3cd6b" data-root-id="2101"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2211">
+          {"bcc0e699-c241-42cc-84b8-c78ba7f0cd77":{"roots":{"references":[{"attributes":{},"id":"2121","type":"PanTool"},{"attributes":{},"id":"2140","type":"BasicTickFormatter"},{"attributes":{},"id":"2117","type":"BasicTicker"},{"attributes":{},"id":"2126","type":"HelpTool"},{"attributes":{},"id":"2113","type":"CategoricalTicker"},{"attributes":{"callback":null,"data":{"top":[65.75,48.400000000000006,58.18333333333334,14.516666666666666],"x":["beef","pork","fowl","fish"]},"selected":{"id":"2145","type":"Selection"},"selection_policy":{"id":"2144","type":"UnionRenderers"}},"id":"2134","type":"ColumnDataSource"},{"attributes":{"ticker":{"id":"2113","type":"CategoricalTicker"}},"id":"2115","type":"Grid"},{"attributes":{},"id":"2122","type":"WheelZoomTool"},{"attributes":{},"id":"2142","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"factors":["beef","pork","fowl","fish"]},"id":"2104","type":"FactorRange"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"2146","type":"BoxAnnotation"},{"attributes":{"axis_label":"beef pork fowl fish","formatter":{"id":"2142","type":"CategoricalTickFormatter"},"ticker":{"id":"2113","type":"CategoricalTicker"}},"id":"2112","type":"CategoricalAxis"},{"attributes":{},"id":"2125","type":"ResetTool"},{"attributes":{},"id":"2108","type":"CategoricalScale"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"2135","type":"VBar"},{"attributes":{},"id":"2110","type":"LinearScale"},{"attributes":{"dimension":1,"ticker":{"id":"2117","type":"BasicTicker"}},"id":"2120","type":"Grid"},{"attributes":{},"id":"2124","type":"SaveTool"},{"attributes":{"callback":null},"id":"2106","type":"DataRange1d"},{"attributes":{"source":{"id":"2134","type":"ColumnDataSource"}},"id":"2138","type":"CDSView"},{"attributes":{"data_source":{"id":"2134","type":"ColumnDataSource"},"glyph":{"id":"2135","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2136","type":"VBar"},"selection_glyph":null,"view":{"id":"2138","type":"CDSView"}},"id":"2137","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"2136","type":"VBar"},{"attributes":{},"id":"2145","type":"Selection"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2121","type":"PanTool"},{"id":"2122","type":"WheelZoomTool"},{"id":"2123","type":"BoxZoomTool"},{"id":"2124","type":"SaveTool"},{"id":"2125","type":"ResetTool"},{"id":"2126","type":"HelpTool"}]},"id":"2127","type":"Toolbar"},{"attributes":{"below":[{"id":"2112","type":"CategoricalAxis"}],"center":[{"id":"2115","type":"Grid"},{"id":"2120","type":"Grid"}],"left":[{"id":"2116","type":"LinearAxis"}],"renderers":[{"id":"2137","type":"GlyphRenderer"}],"title":{"id":"2102","type":"Title"},"toolbar":{"id":"2127","type":"Toolbar"},"x_range":{"id":"2104","type":"FactorRange"},"x_scale":{"id":"2108","type":"CategoricalScale"},"y_range":{"id":"2106","type":"DataRange1d"},"y_scale":{"id":"2110","type":"LinearScale"}},"id":"2101","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2144","type":"UnionRenderers"},{"attributes":{"text":"Histogram"},"id":"2102","type":"Title"},{"attributes":{"axis_label":"average consumption","formatter":{"id":"2140","type":"BasicTickFormatter"},"ticker":{"id":"2117","type":"BasicTicker"}},"id":"2116","type":"LinearAxis"},{"attributes":{"overlay":{"id":"2146","type":"BoxAnnotation"}},"id":"2123","type":"BoxZoomTool"}],"root_ids":["2101"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2211').textContent;
+                  var render_items = [{"docid":"bcc0e699-c241-42cc-84b8-c78ba7f0cd77","roots":{"2101":"5349d7ab-5e37-410d-9448-88d0d4d3cd6b"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="00cd0e8e-ddae-4c16-8710-5e1b04d81497" data-root-id="2212"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2314">
+          {"c14ea368-8010-4521-9f73-8acddc915806":{"roots":{"references":[{"attributes":{"end_angle":{"expr":{"id":"2237","type":"CumSum"},"units":"rad"},"fill_color":{"field":"color"},"line_color":{"value":"white"},"radius":{"units":"data","value":0.4},"start_angle":{"expr":{"id":"2236","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"2240","type":"Wedge"},{"attributes":{"callback":null,"tooltips":"@Food: @value"},"id":"2233","type":"HoverTool"},{"attributes":{},"id":"2245","type":"BasicTickFormatter"},{"attributes":{"callback":null,"start":-0.5},"id":"2215","type":"Range1d"},{"attributes":{"formatter":{"id":"2247","type":"BasicTickFormatter"},"ticker":{"id":"2224","type":"BasicTicker"}},"id":"2223","type":"LinearAxis"},{"attributes":{},"id":"2256","type":"UnionRenderers"},{"attributes":{"dimension":1,"ticker":{"id":"2229","type":"BasicTicker"}},"id":"2232","type":"Grid"},{"attributes":{"field":"angle"},"id":"2237","type":"CumSum"},{"attributes":{},"id":"2257","type":"Selection"},{"attributes":{},"id":"2221","type":"LinearScale"},{"attributes":{},"id":"2219","type":"LinearScale"},{"attributes":{"below":[{"id":"2223","type":"LinearAxis"}],"center":[{"id":"2227","type":"Grid"},{"id":"2232","type":"Grid"},{"id":"2249","type":"Legend"}],"left":[{"id":"2228","type":"LinearAxis"}],"plot_height":400,"plot_width":400,"renderers":[{"id":"2242","type":"GlyphRenderer"}],"title":{"id":"2213","type":"Title"},"toolbar":{"id":"2234","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"2215","type":"Range1d"},"x_scale":{"id":"2219","type":"LinearScale"},"y_range":{"id":"2217","type":"DataRange1d"},"y_scale":{"id":"2221","type":"LinearScale"}},"id":"2212","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"data":{"Food":["Beef","Pork","Fowl","Fish"],"angle":{"__ndarray__":"Nca7dDaW/z8+AYeUyIn3Pyz4H8jKoAJAKPkbb7FM4D8=","dtype":"float64","shape":[4]},"color":["#3182bd","#6baed6","#9ecae1","#c6dbef"],"index":[0,1,2,3],"value":{"__ndarray__":"MzMzMzMzT0AAAAAAAEBHQGZmZmZmZlJAmpmZmZkZMEA=","dtype":"float64","shape":[4]}},"selected":{"id":"2257","type":"Selection"},"selection_policy":{"id":"2256","type":"UnionRenderers"}},"id":"2238","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2233","type":"HoverTool"}]},"id":"2234","type":"Toolbar"},{"attributes":{"data_source":{"id":"2238","type":"ColumnDataSource"},"glyph":{"id":"2240","type":"Wedge"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2241","type":"Wedge"},"selection_glyph":null,"view":{"id":"2243","type":"CDSView"}},"id":"2242","type":"GlyphRenderer"},{"attributes":{"field":"angle","include_zero":true},"id":"2236","type":"CumSum"},{"attributes":{"ticker":{"id":"2224","type":"BasicTicker"}},"id":"2227","type":"Grid"},{"attributes":{"callback":null},"id":"2217","type":"DataRange1d"},{"attributes":{"text":"Consumption in 2005"},"id":"2213","type":"Title"},{"attributes":{},"id":"2229","type":"BasicTicker"},{"attributes":{"label":{"field":"Food"},"renderers":[{"id":"2242","type":"GlyphRenderer"}]},"id":"2250","type":"LegendItem"},{"attributes":{"end_angle":{"expr":{"id":"2237","type":"CumSum"},"units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"radius":{"units":"data","value":0.4},"start_angle":{"expr":{"id":"2236","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"2241","type":"Wedge"},{"attributes":{},"id":"2224","type":"BasicTicker"},{"attributes":{},"id":"2247","type":"BasicTickFormatter"},{"attributes":{"items":[{"id":"2250","type":"LegendItem"}]},"id":"2249","type":"Legend"},{"attributes":{"source":{"id":"2238","type":"ColumnDataSource"}},"id":"2243","type":"CDSView"},{"attributes":{"formatter":{"id":"2245","type":"BasicTickFormatter"},"ticker":{"id":"2229","type":"BasicTicker"}},"id":"2228","type":"LinearAxis"}],"root_ids":["2212"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2314').textContent;
+                  var render_items = [{"docid":"c14ea368-8010-4521-9f73-8acddc915806","roots":{"2212":"00cd0e8e-ddae-4c16-8710-5e1b04d81497"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
